@@ -1,5 +1,5 @@
 variable "region-1" {
-default = "ap-south-1"
+default = "us-west-1"
 }
 variable "env" {}
 variable "num_of_vm" {
@@ -25,10 +25,11 @@ variable "subnets" {
 variable "region_ami_map" {
   type = map(string)
   default = {
-    "us-west-1" = "ami-0ced6a024bb18ff2e"
+    "us-west-1" = "ami-0993d3759749c153c"
     "us-east-1" = "ami-12345"
   }
 }
 variable "web_sg" {
-   type = list
+  type = list
 }
+   
